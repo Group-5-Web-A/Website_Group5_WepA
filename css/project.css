@@ -1,0 +1,242 @@
+/* =========================
+   Reset
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   Body
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+}
+
+
+/* =========================
+   Projects Section
+========================= */
+
+.projects {
+    padding: 80px 8%;
+}
+
+
+/* =========================
+   Container
+========================= */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================
+   Section Title
+========================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.section-title h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.section-title span {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* =========================
+   Project List
+========================= */
+
+.project-list {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================
+   Project Card
+========================= */
+
+.project-card {
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   Project Image
+========================= */
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   Project Content
+========================= */
+
+.project-content {
+    padding: 25px;
+}
+
+.project-type {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.project-content h2 {
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+.project-content > p:not(.project-type) {
+    line-height: 1.6;
+
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Technology
+========================= */
+
+.technology {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+}
+
+.technology span {
+    padding: 6px 12px;
+
+    background-color: #f0f0f0;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   Button
+========================= */
+
+.project-btn {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: #222;
+
+    color: white;
+
+    padding: 11px 20px;
+
+    border-radius: 7px;
+
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    background-color: #555;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 992px) {
+
+    .project-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    .projects {
+        padding: 50px 5%;
+    }
+
+    .section-title h1 {
+        font-size: 32px;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card img {
+        height: 200px;
+    }
+
+}
