@@ -1,0 +1,135 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+header p {
+    font-size: 17px;
+    color: #666;
+}
+
+/* Team Section */
+.team {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto 60px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Team Card */
+.team-card {
+    background-color: white;
+    text-align: center;
+    padding: 25px 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+/* Hover */
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Member Image */
+.team-card img {
+    width: 130px;
+    height: 130px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-bottom: 20px;
+}
+
+/* Name */
+.team-card h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+/* Position */
+.team-card h3 {
+    font-size: 15px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.team-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Social Links */
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+}
+
+.social a:hover {
+    background-color: #007bff;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .team {
+        grid-template-columns: 1fr;
+        width: 85%;
+    }
+}
