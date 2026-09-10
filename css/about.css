@@ -57,6 +57,7 @@ body {
 }
 
 .about-content h1 {
+    color:rgb(243, 128, 147);
     font-size: 42px;
     margin-bottom: 10px;
 }
@@ -71,8 +72,6 @@ body {
     line-height: 1.7;
     margin-bottom: 15px;
 }
-
-/* Information */
 .info {
     display: flex;
     gap: 20px;
@@ -92,25 +91,18 @@ body {
 .info span {
     font-size: 14px;
 }
-
-/* Button */
 .btn {
     display: inline-block;
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 8px;
-
     background-color: #222;
     color: white;
-
     transition: 0.3s;
 }
-
 .btn:hover {
     background-color: #555;
 }
-
-/* Responsive */
 @media (max-width: 768px) {
 
     .about {
