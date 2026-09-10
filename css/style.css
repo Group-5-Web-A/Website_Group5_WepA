@@ -28,7 +28,7 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid var(--line);
 }
 
-.navbar, .footer-content {
+.navbar {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -90,15 +90,29 @@ h1 span, em { color: var(--teal); font-style: normal; }
 .contact-section h2 { font-size: clamp(2.8rem, 6vw, 5rem); margin-bottom: 32px; }
 .contact-section em { color: var(--yellow); }
 .button-light { background: var(--yellow); color: var(--ink); }
-.site-footer { background: var(--ink); color: var(--white); }
-.footer-content { min-height: 90px; }
-.footer-content p { color: #aab5b3; font-size: .72rem; }
+
+.site-footer {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.footer-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 90px;
+}
+
+.footer-content p {
+  color: #aab5b3;
+  font-size: .72rem;
+}
 
 @media (max-width: 760px) {
   .container { padding-left: 22px; padding-right: 22px; }
-  .navbar { min-height: 70px; }
-  .nav-links { gap: 14px; }
-  .nav-links a:not(.nav-button) { display: none; }
+  .navbar { flex-wrap: wrap; justify-content: center; min-height: 70px; padding-bottom: 12px; padding-top: 12px; }
+  .nav-links { gap: 12px; justify-content: center; width: 100%; }
+  .nav-links a { font-size: .72rem; }
   .hero { display: block; min-height: auto; padding-bottom: 90px; padding-top: 76px; }
   .hero-art { height: 320px; margin: 50px auto 0; transform: scale(.82); transform-origin: left top; width: 390px; }
   .intro-grid { display: block; }
